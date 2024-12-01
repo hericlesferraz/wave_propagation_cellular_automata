@@ -8,7 +8,6 @@ from matplotlib.colors import LinearSegmentedColormap, colorConverter
 from config import min_presure, max_pressure, scale, wall
 from simulation import Simulation
 
-# Configuração da visualização
 simulation = Simulation()
 figure = plt.figure()
 ca_plot = plt.imshow(simulation.pressure, cmap='seismic', interpolation='bilinear', vmin=min_presure, vmax=max_pressure)
