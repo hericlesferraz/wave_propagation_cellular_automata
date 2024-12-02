@@ -1,5 +1,5 @@
 """
-Arquivo principal para executar a simulação.
+Main file to execte the simulation.
 """
 
 import matplotlib.pyplot as plt
@@ -28,8 +28,8 @@ if __name__ == "__main__":
 
     if len(argv) > 2 and argv[2] == 'save':
         writer = FFMpegWriter(fps=30)
-        frames = 100
-        with writer.saving(figure, "writer_test.mp4", 200):
+        frames = 400
+        with writer.saving(figure, f"writer_test_{argv[1]}.mp4", 200):
             for i in range(frames):
                 animation_func(i)
                 writer.grab_frame()

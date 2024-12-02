@@ -1,5 +1,5 @@
 """
-Configurações para a simulação de autômatos celulares.
+Settings of simulatin Cellular Automata.
 """
 
 import sys
@@ -16,7 +16,7 @@ vertPos = size_y - 3 * scale
 horizPos = 1 * scale
 wallTop = size_y - 3 * scale
 wall_x_pos = 2 * scale
-max_pressure = initial_P / 2
+max_pressure = initial_P + 2
 min_presure = -initial_P / 2
 
 argc = len(sys.argv)
